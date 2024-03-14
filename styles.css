@@ -1,7 +1,7 @@
 /* styles.css */
 body {
   font-family: 'Arial', sans-serif;
-  background-image: url('path/to/valorant-blobs.svg'); /* Replace with actual SVG path */
+  background-image: url('pxs-new-bg.jpg'); /* Replace with actual SVG path */
   background-size: cover;
   backdrop-filter: blur(10px);
 }
