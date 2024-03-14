@@ -1,11 +1,12 @@
-// script.js
-document.addEventListener('DOMContentLoaded', function () {
-  const header = document.querySelector('header');
-  header.style.opacity = 0;
+const animations = document.querySelectorAll('.animation');
 
-  // Fade in the header
-  setTimeout(() => {
-      header.style.transition = 'opacity 1s ease-in-out';
-      header.style.opacity = 1;
-  }, 500); // Adjust timing as needed
+window.addEventListener('scroll', () => {
+  animations.forEach(animation => {
+    const animationTop = animation.getBoundingClientRect().top;
+    const windowTop = window.innerHeight;
+
+    if (animationTop < windowTop) {
+      animation.classList.add('show');
+    }
+  });
 });

@@ -1,41 +1,19 @@
-/* styles.css */
 body {
-  font-family: 'Arial', sans-serif;
-  background-image: url('pxs-new-bg.jpg'); /* Replace with actual SVG path */
-  background-size: cover;
-  backdrop-filter: blur(10px);
+  font-family: 'Valorant', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1f1f1f;
 }
 
-header {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-  padding: 20px;
-  border-radius: 15px; /* Rounded corners for the navigation bar */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav li {
-  margin-right: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #fff; /* White text */
-  font-weight: bold;
-}
-
-/* Mobile-first design */
-@media (max-width: 768px) {
-  /* Adjust styles for smaller screens */
-  nav ul {
-      flex-direction: column;
-  }
-
-  nav li {
-      margin-right: 0;
-      margin-bottom: 10px;
-  }
+footer {
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
 }
